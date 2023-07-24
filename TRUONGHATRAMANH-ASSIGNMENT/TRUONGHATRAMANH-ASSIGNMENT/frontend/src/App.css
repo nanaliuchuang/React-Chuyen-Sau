@@ -1,0 +1,11 @@
+.mylogo{
+    position: absolute;
+    object-fit: contain;
+    top: 10px;
+    width: 120px;
+  }
+  footer{
+    font-weight: 500;
+    font-size: 18px;
+  }
+  

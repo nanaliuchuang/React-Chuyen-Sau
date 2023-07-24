@@ -1,0 +1,83 @@
+.title {
+  font-size: 95px;
+  background: -webkit-repeating-linear-gradient(-45deg,#333,#fff,#3424,#323e46,#221f24);
+  background-size: 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 1px 1px 2px rgba(26, 24, 24, 0.25);
+  animation: animate 3s ease-in-out infinite;
+}
+.subtitle {
+  font-size: 25px;
+  padding-top: 10px;
+}
+.intro-text {
+  width: 100%;
+  text-align: center;
+}
+.main {
+  min-height: 93vh;
+  display: flex;
+  align-items: center;
+  background-image: url("../../background1.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.buttonContainer {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.landingbutton {
+  width: 200px;
+  height: 55px;
+  background: none;
+  border-style: outset;
+
+}
+.landingbutton:hover{
+  background: -webkit-repeating-linear-gradient(-45deg,#333,#fff,#3424,#323e46,#221f24);
+  background-size: 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 1px 1px 2px rgba(26, 24, 24, 0.25);
+  animation: animate 3s ease-in-out infinite;
+  border-style: inset;
+}
+@keyframes animate{
+  0%{
+      background-position: 0 0;
+  }
+  25%{
+      background-position: 100% 0;
+  }
+  50%{
+      background-position: 100% 100%;
+  }
+  75%{
+      background-position: 0 100%;
+  }
+  100%{
+      background-position: 0 0;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .buttonContainer {
+    padding: 0 200px;
+  }
+  .title {
+    padding: 0 100px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .title {
+    font-size: 60px;
+  }
+  .landingbutton {
+    width: 150px;
+    height: 50px;
+  }
+}
